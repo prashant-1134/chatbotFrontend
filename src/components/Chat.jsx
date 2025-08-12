@@ -28,7 +28,7 @@ const Chat = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/chat`, {
+      const response = await fetch(`https://chatbotbackend-t7vi.onrender.com/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
